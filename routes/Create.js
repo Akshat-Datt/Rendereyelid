@@ -10,7 +10,7 @@ router.post(
   "/",
   [
     body("email").isEmail(),
-    body("first").isLength({ min: 5 }),
+    body("first").isLength({ min: 4 }),
     body("last").isLength({ min: 3 }),
     body("user").isLength({ min: 5 }),
     body("password").isLength({ min: 6 }),
